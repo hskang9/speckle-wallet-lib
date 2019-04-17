@@ -13,7 +13,11 @@ created: 2019-04-18
 
 FIXME: replace "document" with some improvement channel in polkadot
 
-This document extends the idea of BIP 44 to manage multi-accounts for interchain.
+This document introduces Hierarchy deterministic wallet for polkadot/substrate to achieve following benefit:
+
+1. Removing neccessity for backup on randomly generated keys
+2. Recoverable multi-accounts for parachains
+3. Selective asset sharing by derived accounts from the root
 
 ==Motivation==
 
