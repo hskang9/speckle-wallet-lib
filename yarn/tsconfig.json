@@ -1,0 +1,27 @@
+{
+  "extends": "../node_modules/@polkadot/dev/config/tsconfig",
+  "compilerOptions": {
+    "outDir": "../dist",
+    "charset": "utf8",
+    "target": "esnext",
+    "module": "none",
+    "jsx": "preserve",
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "noImplicitAny": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,     /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "baseUrl": "../",
+    "typeRoots": ["../node_modules/@polkadot/ts", "./node_modules/@types"]
+  },
+  "include": [
+    "../src/**/*",
+    "../node_modules/@types/node/globals.d.ts",
+    "../node_modules/@types/node/globals.d.ts"
+  ],
+  "exclude": ["../node_modules", "**/*.spec.ts"]
+}
